@@ -49,3 +49,6 @@ class RideMatching:
             print("Looking for drivers............")
             driver = self.avaiable_drivers[0]
             ride = Ride(ride_request.rider.current_request, ride_request.end_location)
+            
+            driver.accept_ride(ride)
+            return ride

@@ -58,6 +58,6 @@ class Driver(User):
         
     
     def accept_ride(self, ride):
-        pass
+        ride.set_driver(self)
         
     
