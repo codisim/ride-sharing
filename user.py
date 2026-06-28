@@ -52,4 +52,12 @@ class Driver(User):
         self.current_location = current_location
         self.wallet = 0
         
+        
+    def display_profile(self):
+        print(f"Driver: {self.name} and Email: {self.email}")
+        
+    
+    def accept_ride(self, ride):
+        pass
+        
     
