@@ -21,7 +21,9 @@ class Ride:
     def start_ride(self):
         self.start_time = datetime.now()
     
-    def end_ride(self):
+    def end_ride(self, amount):
         self.end_time = datetime.now()
+        self.rider.wallet -= self.estimated_fare
+        self.driver.wallet += self.estimated_fare
         
         
