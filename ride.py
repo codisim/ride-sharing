@@ -37,3 +37,15 @@ class RideRequest:
     def __init__(self, rider, end_location):
         self.rider = rider
         self.end_location = end_location 
+        
+        
+
+class RideMatching:
+    def __init__(self, drivers):
+        self.avaiable_drivers = drivers
+        
+    def find_request(self, ride_request):
+        if len(self.avaiable_drivers) > 0:
+            print("Looking for drivers............")
+            driver = self.avaiable_drivers[0]
+            ride = Ride(ride_request.rider.current_request, ride_request.end_location)
