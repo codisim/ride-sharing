@@ -21,9 +21,19 @@ class Ride:
     def start_ride(self):
         self.start_time = datetime.now()
     
-    def end_ride(self, amount):
+    def end_ride(self):
         self.end_time = datetime.now()
         self.rider.wallet -= self.estimated_fare
         self.driver.wallet += self.estimated_fare
         
         
+    def __repr__(self):
+        return f"Ride details. Started from {self.start_location} to {self.end_location}"
+    
+    
+
+
+class RideRequest:
+    def __init__(self, rider, end_location):
+        self.rider = rider
+        self.end_location = end_location 
