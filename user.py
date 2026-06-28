@@ -42,3 +42,14 @@ class Rider(User):
     
     def show_current_ride(self):
         print(self.current_ride)
+        
+        
+        
+        
+class Driver(User):
+    def __init__(self, name, email, nid, current_location):
+        super().__init__(name, email, nid)
+        self.current_location = current_location
+        self.wallet = 0
+        
+    
