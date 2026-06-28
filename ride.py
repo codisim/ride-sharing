@@ -20,5 +20,8 @@ class Ride:
     
     def start_ride(self):
         self.start_time = datetime.now()
+    
+    def end_ride(self):
+        self.end_time = datetime.now()
         
         
