@@ -62,6 +62,10 @@ class Driver(User):
         
     
     def accept_ride(self, ride):
+        ride.start_ride(self)
         ride.set_driver(self)  # driver ar object
         
+    
+    def reach_dastination(self, ride):
+        ride.end_ride(self)
     
