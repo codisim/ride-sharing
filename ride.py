@@ -63,4 +63,5 @@ class RideSharing:
         self.drivers = []
         self.rides = []
         
-    def add
+    def add_rider(self, rider):
+        self.riders.append(rider)
