@@ -52,3 +52,15 @@ class RideMatching:
             
             driver.accept_ride(ride)
             return ride
+        
+        
+        
+        
+class RideSharing:
+    def __init__(self, company_name):
+        self.company_name = company_name
+        self.riders = []
+        self.drivers = []
+        self.rides = []
+        
+    def add
