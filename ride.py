@@ -27,6 +27,16 @@ class Ride:
         self.driver.wallet += self.estimated_fare
         
         
+    def calculate_fare(self, distance, vichel_type):
+        fare_per_kel = {
+            'car': 40,
+            'bike': 20,
+            'cng': 25
+        }
+        
+        return distance * fare_per_kel.get(vichel_type)
+        
+        
     def __repr__(self):
         return f"Ride details. Started from {self.start_location} to {self.end_location}"
     
