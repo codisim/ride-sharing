@@ -58,6 +58,6 @@ class Driver(User):
         
     
     def accept_ride(self, ride):
-        ride.set_driver(self)
+        ride.set_driver(self)  # driver ar object
         
     
