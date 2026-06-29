@@ -27,14 +27,14 @@ class Ride:
         self.driver.wallet += self.estimated_fare
         
         
-    def calculate_fare(self, distance, vichel_type):
+    def calculate_fare(self, distance, vichel):
         fare_per_kel = {
             'car': 40,
             'bike': 20,
             'cng': 25
         }
         
-        return distance * fare_per_kel.get(vichel_type)
+        return distance * fare_per_kel.get(vichel)
         
         
     def __repr__(self):

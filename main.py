@@ -12,11 +12,11 @@ kofiluddin = Driver("Kofiluddin", "kofiluddin@gmail.com", 1232323, "Gulsan")
 niye_jao.add_driver(kofiluddin)
 
 
-rahim.request_ride(niye_jao, 'uttara', 'car')
+rahim.request_ride(niye_jao, "uttara", "car")
 rahim.show_current_ride()
 
 
-kofiluddin.
+kofiluddin.reach_dastination(rahim.current_ride)
 
 
 print(niye_jao)
