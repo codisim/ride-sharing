@@ -65,3 +65,12 @@ class RideSharing:
         
     def add_rider(self, rider):
         self.riders.append(rider)
+
+    def add_driver(self, driver):
+        self.drivers.append(driver)
+        
+    def __str__(self):
+        return f"Company Name {self.company_name} with riders: {len(self.riders)} and drivers: {len(self.drivers)}"
+    
+    
+    
